@@ -1,0 +1,72 @@
+{
+  "name": "simple-web-cli",
+  "version": "3.1.12",
+  "main": "./bin/init.js",
+  "scripts": {
+    "patch": "npx ncu -u; npm i; npm audit fix; npm version patch --no-git-tag-version;",
+    "minor": "npx ncu -u; npm i; npm audit fix; npm version minor --no-git-tag-version;",
+    "major": "npx ncu -u; npm i; npm audit fix; npm version major --no-git-tag-version;",
+    "test-services": "node \"bin/test-services.js\""
+  },
+  "bin": {
+    "sw": "bin/init.js",
+    "simple-web": "bin/init.js",
+    "simple-web-cli": "bin/init.js"
+  },
+  "keywords": [
+    "ftp-chmod",
+    "ftp-service",
+    "html-import",
+    "html-include",
+    "html-require",
+    "require-browser",
+    "web-automation",
+    "web-bundle",
+    "web-compiler",
+    "web-modules",
+    "web-require"
+  ],
+  "author": "https://github.com/wellwelwel",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "archiver": "^5.3.0",
+    "autoprefixer": "^10.4.2",
+    "basic-ftp": "^4.6.6",
+    "draftlog": "^1.0.13",
+    "eslint": "^8.7.0",
+    "express": "^4.17.2",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.2.0",
+    "html-minifier": "^4.0.0",
+    "mime-types": "^2.1.34",
+    "node-watch": "^0.7.2",
+    "package-json": "^7.0.0",
+    "postcss-cli": "^9.1.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.48.0",
+    "uglify-js": "^3.14.5",
+    "uglifycss": "^0.0.29"
+  },
+  "browserslist": [
+    "> 0%"
+  ],
+  "devDependencies": {
+    "npm-check-updates": "^12.1.0"
+  },
+  "description": "⚡ A simple compiler to automate the development in HTML, CSS, JavaScript and PHP languages using FTP connection to deploy the processed files automatically to the final server.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wellwelwel/simple-web-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wellwelwel/simple-web-cli/issues"
+  },
+  "homepage": "https://github.com/wellwelwel/simple-web-cli#readme",
+  "engines": {
+    "node": ">=14.5.0",
+    "npm": ">=7.0.2"
+  }
+}
